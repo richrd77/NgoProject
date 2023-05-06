@@ -77,6 +77,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppInstaller.cs" />
+    <Compile Include="Migrations\202305062008327_loginv1.cs" />
+    <Compile Include="Migrations\202305062008327_loginv1.designer.cs">
+      <DependentUpon>202305062008327_loginv1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="NgoDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\BaseRepository.cs" />
@@ -94,6 +99,11 @@
       <Project>{cc6d1b7f-2bbb-48c2-bc51-eaf9d6a7b7f6}</Project>
       <Name>Domain</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202305062008327_loginv1.resx">
+      <DependentUpon>202305062008327_loginv1.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
