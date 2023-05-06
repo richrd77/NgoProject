@@ -43,10 +43,10 @@
             <form runat="server" style="width: 100%;">
                 <h1>Login</h1>
                 <div class="c uname">
-                    <Ngo:Text runat="server" LblText="User Name" />
+                    <Ngo:Text runat="server" ID="uname" LblText="User Name" />
                 </div>
                 <div class="c pwd">
-                    <Ngo:Text runat="server" LblText="Password" Type="Password" />
+                    <Ngo:Text runat="server" ID="pwd" LblText="Password" Type="Password" />
                 </div>
                 <div class="c login-action">
                     <asp:button runat="server" class="ngo-btn" ID="loginBtn" Text="Login" />

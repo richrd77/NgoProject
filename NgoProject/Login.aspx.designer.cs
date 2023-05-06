@@ -15,6 +15,24 @@ namespace NgoProject
     {
 
         /// <summary>
+        /// uname control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::NgoProject.UserControls.Input.TextboxUserControl uname;
+
+        /// <summary>
+        /// pwd control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::NgoProject.UserControls.Input.TextboxUserControl pwd;
+
+        /// <summary>
         /// loginBtn control.
         /// </summary>
         /// <remarks>
