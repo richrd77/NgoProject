@@ -10,9 +10,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         :root {
-            --color: black;
+            --color: #0A0A08;
             --acent: #1F51FF;
             --bgColor: white;
+            --warn: #FF3131
         }
 
         * {
@@ -151,6 +152,48 @@
                 div.ngo-socials svg:hover {
                     fill: var(--acent);
                 }
+
+        .ngo-btn {
+            background-color: var(--acent);
+            color: var(--bgColor);
+            cursor: pointer;
+            padding: 0.65em 1.65em;
+            border: transparent;
+            transition: box-shadow 0.05s;
+            border-radius:4px;
+        }
+
+            .ngo-btn:active {
+                box-shadow: 0 0 8px 0 var(--acent);
+            }
+
+        .ngo-btn-sec {
+            background-color: var(--color);
+            color: var(--bgColor);
+            cursor: pointer;
+            padding: 0.65em 1.65em;
+            border: transparent;
+            transition: box-shadow 0.05s;
+            border-radius:4px;
+        }
+
+            .ngo-btn-sec:active {
+                box-shadow: 0 0 8px 0 var(--color);
+            }
+
+        .ngo-btn-war {
+            background-color: var(--warn);
+            color: var(--bgColor);
+            cursor: pointer;
+            padding: 0.65em 1.65em;
+            border: transparent;
+            transition: box-shadow 0.05s;
+            border-radius:4px;
+        }
+
+        .ngo-btn-war:active {
+            box-shadow: 0 0 8px 0 var(--warn);
+        }
     </style>
 </head>
 <body>
@@ -166,6 +209,7 @@
                 <li class="ngo-link"><a runat="server" href="~/">Home</a></li>
                 <li class="ngo-link"><a runat="server" href="~/About.aspx">About</a></li>
                 <li class="ngo-link"><a runat="server" href="~/Contact.aspx">Contact</a></li>
+                <li class="ngo-link"><a runat="server" href="~/Login.aspx">Login</a></li>
             </ul>
         </nav>
     </header>
