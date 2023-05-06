@@ -37,6 +37,11 @@
             cursor: pointer;
             user-select: none;
         }
+
+        .err {
+            color: var(--warn);
+            display: none;
+        }
     </style>
     <div class="login-wrapper">
         <div class="login-frm">
@@ -48,8 +53,11 @@
                 <div class="c pwd">
                     <Ngo:Text runat="server" ID="pwd" LblText="Password" Type="Password" />
                 </div>
+                <div id="errMsg" runat="server" class="c err">
+                    <p>Credentials mismatch, verify the username and password are correct!</p>
+                </div>
                 <div class="c login-action">
-                    <asp:button runat="server" class="ngo-btn" ID="loginBtn" Text="Login" />
+                    <asp:Button runat="server" class="ngo-btn" ID="loginBtn" Text="Login" />
                     <a runat="server" href="~/Signup.aspx" class="sign-up">Sign up</a>
                 </div>
             </form>

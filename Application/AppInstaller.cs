@@ -1,4 +1,5 @@
-﻿using Application.Services;
+﻿using Application.Repositories;
+using Application.Services;
 using Autofac;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,7 @@ namespace Application
         public static ContainerBuilder InstallApplication(this ContainerBuilder builder)
         {
             builder.InstallServices();
+            builder.InstallRepositories();
             return builder;
         }
     }

@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using Domain.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,6 +17,8 @@ namespace Application.Services
         /// <returns></returns>
         public static ContainerBuilder InstallServices(this ContainerBuilder builder)
         {
+            builder.RegisterGeneric(typeof(BaseService<>)).As(typeof(IBaseService<>)).InstancePerLifetimeScope();
+            builder.RegisterType<LoginService>().As<ILoginService>().InstancePerLifetimeScope();
             return builder;
         }
     }
