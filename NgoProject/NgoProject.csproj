@@ -122,6 +122,8 @@
     <Content Include="images\logo.jpeg" />
     <Content Include="Login.aspx" />
     <Content Include="Signup.aspx" />
+    <Content Include="UserControls\Input\DatePickerUserControl.ascx" />
+    <Content Include="UserControls\Input\SelectUserControl.ascx" />
     <Content Include="UserControls\Input\TextboxUserControl.ascx" />
     <Content Include="js\slider.js" />
     <Content Include="SQL Scripts\Table Initital scripts.sql" />
@@ -180,6 +182,20 @@
     </Compile>
     <Compile Include="Signup.aspx.designer.cs">
       <DependentUpon>Signup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Input\DatePickerUserControl.ascx.cs">
+      <DependentUpon>DatePickerUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Input\DatePickerUserControl.ascx.designer.cs">
+      <DependentUpon>DatePickerUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Input\SelectUserControl.ascx.cs">
+      <DependentUpon>SelectUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Input\SelectUserControl.ascx.designer.cs">
+      <DependentUpon>SelectUserControl.ascx</DependentUpon>
     </Compile>
     <Compile Include="UserControls\Input\TextboxUserControl.ascx.cs">
       <DependentUpon>TextboxUserControl.ascx</DependentUpon>

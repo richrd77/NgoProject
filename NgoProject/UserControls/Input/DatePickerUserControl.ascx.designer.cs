@@ -7,38 +7,29 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace NgoProject
+namespace NgoProject.UserControls.Input
 {
 
 
-    public partial class Signup
+    public partial class DatePickerUserControl
     {
 
         /// <summary>
-        /// dob control.
+        /// lbl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::NgoProject.UserControls.Input.DatePickerUserControl dob;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl lbl;
 
         /// <summary>
-        /// ddlgender control.
+        /// txt1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::NgoProject.UserControls.Input.SelectUserControl ddlgender;
-
-        /// <summary>
-        /// signBtn control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button signBtn;
+        protected global::System.Web.UI.WebControls.TextBox txt1;
     }
 }

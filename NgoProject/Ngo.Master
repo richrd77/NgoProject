@@ -64,7 +64,7 @@
                 border: transparent;
             }
 
-        @media (max-width: 440px) {
+        @media (max-width: 1080px) {
             button.ngo-ham {
                 border: transparent;
                 background-color: transparent;
@@ -93,6 +93,7 @@
                 backdrop-filter: blur(5px);
                 opacity: 0;
                 pointer-events: none;
+                z-index: 9999;
             }
 
                 nav.mob-show {
@@ -139,7 +140,7 @@
             color: var(--bgColor);
             padding: 1em 2em;
             display: flex;
-            justify-content:space-between;
+            justify-content: space-between;
         }
 
         div.ngo-location > address > p {
@@ -162,6 +163,13 @@
                 div.ngo-socials svg:hover {
                     fill: var(--acent);
                 }
+
+        @media only screen and (max-width: 1238px) {
+            footer.ngo-footer {
+                flex-direction: column;
+                gap: 1em;
+            }
+        }
 
         .ngo-btn {
             background-color: var(--acent);
@@ -208,7 +216,7 @@
 </head>
 <body>
     <header class="ngo-header">
-        <img src="images/logo.jpeg" style="width:100px; height:100px;" />
+        <img src="images/logo.jpeg" style="width: 100px; height: 100px;" />
         <h1 class="brand">ASWCT</h1>
         <button class="ngo-ham" id="ham">
             <a></a>

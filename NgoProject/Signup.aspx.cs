@@ -7,9 +7,15 @@ using System.Web.UI.WebControls;
 
 namespace NgoProject
 {
-    public partial class Signup : System.Web.UI.Page
+    public partial class Signup : Page
     {
         protected void Page_Load(object sender, EventArgs e)
+        {
+            ddlgender.Source = new Dictionary<string, string> { { "-1", "Select Gender" }, { "M", "Male" }, { "F", "Female" } };
+            
+        }
+
+        protected void signBtn_Click(object sender, EventArgs e)
         {
 
         }
