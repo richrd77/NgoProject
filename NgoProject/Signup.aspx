@@ -60,16 +60,17 @@
                     <Ngo:Text runat="server" LblText="Email" />
                 </div>
                 <div class="c dob">
-                    <Ngo:Text runat="server" LblText="Date of Birth" />
+                    <Ngo:Date runat="server" ID="dob" LblText="Date of Birth" />
                 </div>
                 <div class="c gen">
-                    <Ngo:Text runat="server" LblText="Gender" />
+                    <%--<Ngo:Text runat="server" LblText="Gender" />--%>
+                    <Ngo:Select runat="server" ID="ddlgender" />
                 </div>
                 <div class="c pwd">
                     <Ngo:Text runat="server" LblText="Password" Type="Password" />
                 </div>
                 <div class="c login-action">
-                    <button class="ngo-btn">Signup</button>
+                    <asp:Button runat="server" class="ngo-btn" ID="signBtn" Text="Sign up" OnClick="signBtn_Click" />
                     <a runat="server" href="~/Login.aspx" class="sign-up">Login</a>
                 </div>
             </form>
