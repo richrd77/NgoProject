@@ -19,7 +19,7 @@
 
         <ul class="slideset">
             <li class="active">
-                <img src="images/image1.jpg" alt="" />
+                <img src="images/image1_1.jpg" style="height: 250px;" alt="" />
                 <div class="description">
                     <strong>NGO</strong>
                     <p>A Non-Governmental Organisation (NGO) is a non-profitable charitable organisation. In India, NGOs established under Section 8 of the Companies Act are governed by the provisions of the Companies Act, 2013, while the NGOs established as a trust or society are governed by the state governments. 
@@ -28,7 +28,7 @@ All NGOs work for the betterment of society and to help people in need. Since NG
                 </div>
             </li>
             <li>
-                <img src="images/image2.jpg" alt="" />
+                <img src="images/image1_2.jpg" style="height: 250px;" alt="" />
                 <div class="description">
                     <strong>Fund raise</strong>
                     <p>Ways to Raise Funds for NGOs
@@ -51,14 +51,14 @@ Fundraising from abroad, in the case of NGOs holding FCRA (Foreign Contribution 
                 </div>
             </li>
             <li>
-                <img src="images/image3.jpg" alt="" />
+                <img src="images/image3.jpg" style="height: 250px;" alt="" />
                 <div class="description">
                     <strong>NGO Funding</strong>
                     <p>NGO funding is done by getting membership fees, selling goods and services, grants from other charitable foundations, state governments, municipal and private donors, donations from affluent individuals, etc. Despite their autonomy, many NGOs depend substantially on government subsidies and money for funds. Some government financing for NGOs could be considered contentious since it may promote political aims instead of a nation’s development.</p>
                 </div>
             </li>
             <li>
-                <img src="images/image4.jpg" alt="" />
+                <img src="images/image4.jpg" style="height: 250px;" alt="" />
                 <div class="description">
                     <strong>NGO Donations</strong>
                     <p>Donations made to NGOs are deductible under Section 80G of the Income Tax Act, 1961. NGOs must register under Section 80G and obtain the 80G certificate. When individuals or organisations contribute to an NGO, having a Section 80G certificate, the contributions are deductible up to 50% of their taxable income.</p>
