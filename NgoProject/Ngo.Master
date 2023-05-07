@@ -19,6 +19,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         div.ngo-socials svg {
@@ -136,7 +137,6 @@
             color: var(--bgColor);
             padding: 1em 2em;
             display: flex;
-            justify-content: space-evenly;
         }
 
         div.ngo-socials {
@@ -155,7 +155,7 @@
 </head>
 <body>
     <header class="ngo-header">
-        <h1 class="brand">My Ngo</h1>
+        <h1 class="brand">AMIT SINGHRAJ WELFARE & CHARITABLE TRUST(ASWCT)</h1>
         <button class="ngo-ham" id="ham">
             <a></a>
             <a></a>
@@ -172,8 +172,22 @@
     <main class="ngo-main">
         <asp:ContentPlaceHolder ID="body" runat="server"></asp:ContentPlaceHolder>
     </main>
+    <footer class="ngo-footer" style="height: 150px;font-size: 16px;">
+        <div class="ngo-location">
+            AMIT SINGHRAJ WELFARE & CHARITABLE TRUST(ASWCT)
+            <p style="padding: 2px;">
+            <i class="fas fa-map-marker-alt" style="margin-right: 5px;"></i>C.O: #B/1116,11th Floor Mittal Tower,Mg Road,Bangalore,Karnataka - 560001
+        <br />
+            Reg. Offc.: Y-Axis Institute Campus, Trimuhani, Shahganj, VIP Road Benta, Darbhanga, Bihar – 846003
+        </p>
+        <p style="padding: 2px;">
+            <i class="fas fa-mobile-alt" style="margin-right: 5px;"></i>Mobile: +91 - 9507977671
+                        
+        </p>
+        </div>        
+    </footer>
     <footer class="ngo-footer">
-        <div class="ngo-location">My Ngo address</div>
+        <div class="ngo-location">AMIT SINGHRAJ WELFARE & CHARITABLE TRUST(ASWCT)</div>
         <div class="ngo-socials">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                 <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />

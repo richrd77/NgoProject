@@ -21,48 +21,66 @@
             <li class="active">
                 <img src="images/image1.jpg" alt="" />
                 <div class="description">
-                    <strong>Chrome</strong>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rutrum porttitor felis quis faucibus. Sed blandit vehicula nisl, in placerat metus convallis id. Vestibulum mi enim, sodales sed volutpat vel, malesuada eget nisl. Phasellus dapibus risus a enim ornare viverra. Nullam pellentesque dignissim tellus, a pulvinar metus volutpat at. Integer tincidunt nunc sit amet felis bibendum vel condimentum dui mattis. Aenean luctus turpis sed nisi imperdiet rhoncus lobortis vitae ante. Vivamus sit amet leo vitae lorem suscipit bibendum vel eget turpis. Suspendisse hendrerit velit et mi adipiscing eget ultrices enim iaculis. Pellentesque erat est, accumsan non congue ut, eleifend et lectus.</p>
+                    <strong>NGO</strong>
+                    <p>A Non-Governmental Organisation (NGO) is a non-profitable charitable organisation. In India, NGOs established under Section 8 of the Companies Act are governed by the provisions of the Companies Act, 2013, while the NGOs established as a trust or society are governed by the state governments. 
+                        <br />
+All NGOs work for the betterment of society and to help people in need. Since NGOs are non-profitable organisations, they need to raise funds to earn money for doing their work. This article provides how to get funds for NGOs in India.</p>
                 </div>
             </li>
             <li>
                 <img src="images/image2.jpg" alt="" />
                 <div class="description">
-                    <strong>Firefox</strong>
-                    <p>Donec dignissim euismod risus sed vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eleifend, ipsum id fermentum venenatis, elit metus mollis sem, vel faucibus mauris velit sed neque. Nam volutpat posuere mauris, a vehicula lorem placerat vel. Duis viverra libero et massa rhoncus eu faucibus dui dignissim. In rhoncus odio at velit suscipit eu tempus sapien consequat. In hac habitasse platea dictumst. Vestibulum vehicula mollis massa non posuere. Sed facilisis enim a sapien luctus tempor vel ut risus. Nam lobortis, sem in sodales tempor, ante mauris viverra nisi, ut luctus felis turpis ac sem. In hac habitasse platea dictumst. Maecenas ultrices nisi id quam pretium pharetra feugiat sem feugiat.</p>
+                    <strong>Fund raise</strong>
+                    <p>Ways to Raise Funds for NGOs
+Raising funds through events.
+Network fundraising.
+Personal solicitation.
+Online fundraising.
+Volunteering.
+Periodic donation through the adoption of a project.
+Raising money from young people and in schools.
+Donations in kind.
+Collections.
+Corporate partnerships.
+Product sales.
+Crowdfunding.
+Raising money from corporates under CSR.
+Raising money under government schemes.
+Fundraising from social media.
+Fundraising from abroad, in the case of NGOs holding FCRA (Foreign Contribution Regulation Act) certificate.</p>
                 </div>
             </li>
             <li>
                 <img src="images/image3.jpg" alt="" />
                 <div class="description">
-                    <strong>Opera</strong>
-                    <p>Pellentesque bibendum, dolor vel hendrerit faucibus, tellus sem auctor mauris, ut auctor neque augue ut tellus. Etiam vitae lacus purus. Duis neque quam, hendrerit quis consequat vel, feugiat sed mi. Cras accumsan magna vitae felis lacinia ultricies. Maecenas ultrices turpis sit amet ante mollis condimentum. Donec adipiscing erat volutpat erat adipiscing pellentesque. Fusce vel ante et dui tristique gravida. Morbi cursus eleifend nunc, id lacinia tortor venenatis sit amet. Morbi volutpat tortor sed tortor varius pellentesque. Vestibulum pharetra dictum nisl, quis pulvinar arcu ornare quis. Ut faucibus accumsan velit, ut dictum eros dapibus sit amet.</p>
+                    <strong>NGO Funding</strong>
+                    <p>NGO funding is done by getting membership fees, selling goods and services, grants from other charitable foundations, state governments, municipal and private donors, donations from affluent individuals, etc. Despite their autonomy, many NGOs depend substantially on government subsidies and money for funds. Some government financing for NGOs could be considered contentious since it may promote political aims instead of a nation’s development.</p>
                 </div>
             </li>
             <li>
                 <img src="images/image4.jpg" alt="" />
                 <div class="description">
-                    <strong>Safari</strong>
-                    <p>Nam elementum mattis magna nec fermentum. Donec tincidunt nulla quis erat suscipit sagittis. Vivamus ornare rhoncus mi non aliquam. Phasellus ante odio, fringilla a hendrerit ac, vulputate quis turpis. In ullamcorper turpis et velit vulputate cursus. Nam vitae purus est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at lorem quis massa facilisis dignissim. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce non dui massa, sit amet dignissim enim. Fusce risus urna, mattis ut gravida vel, tincidunt ac erat. Duis tincidunt augue ultricies tortor lobortis ultrices. Sed sollicitudin pharetra dignissim. Nulla facilisi.</p>
+                    <strong>NGO Donations</strong>
+                    <p>Donations made to NGOs are deductible under Section 80G of the Income Tax Act, 1961. NGOs must register under Section 80G and obtain the 80G certificate. When individuals or organisations contribute to an NGO, having a Section 80G certificate, the contributions are deductible up to 50% of their taxable income.</p>
                 </div>
             </li>
-            <li>
+            <%--<li>
                 <img src="images/image5.jpg" alt="" />
                 <div class="description">
                     <strong>Internet Explorer</strong>
                     <p>Quisque sollicitudin nisi vitae turpis imperdiet interdum. Nam quis erat vehicula libero fringilla tempus. Sed neque urna, egestas sit amet dapibus nec, viverra ut sem. Nunc ut tellus diam. Ut sed fringilla lacus. Phasellus ac nisl id neque porttitor faucibus vel ut lorem. Aenean quam odio, porta ut vestibulum sit amet, scelerisque quis libero. Nunc gravida pharetra libero, id malesuada nisl ultricies sed.</p>
                 </div>
-            </li>
+            </li>--%>
         </ul>
         <div class="control-links">
             <a class="btn-prev" href="#">&lt;</a>
             <div class="switcher-holder">
                 <ul class="switcher">
-                    <li><a href="#">Donar</a></li>
-                    <li><a href="#">Volunteer</a></li>
-                    <li><a href="#">Fund raiser</a></li>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">Members</a></li>
+                    <li><a href="#">NGO</a></li>
+                    <li><a href="#">Fund Raise</a></li>
+                    <li><a href="#">Funding</a></li>
+                    <li><a href="#">Tax deduction</a></li>
+                    <%--<li><a href="#">Members</a></li>--%>
                 </ul>
             </div>
             <a class="btn-next" href="#">&gt;</a>
