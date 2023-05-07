@@ -52,6 +52,7 @@
     <Compile Include="Repositories\IBaseRepository.cs" />
     <Compile Include="Services\IBaseService.cs" />
     <Compile Include="Services\ILogin.cs" />
+    <Compile Include="Services\ISignupService.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
