@@ -5,11 +5,7 @@
 
     <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
     <style>
-        h1 {
-            margin: 150px auto 30px auto;
-        }
-
-        h1, .lead {
+        .lead {
             text-align: center;
         }
     </style>

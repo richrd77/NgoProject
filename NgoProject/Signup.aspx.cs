@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace NgoProject
 {
-    public partial class About : BasePage
+    public partial class Signup : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
