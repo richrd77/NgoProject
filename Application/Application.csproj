@@ -77,9 +77,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppInstaller.cs" />
+    <Compile Include="Common\Enum\RoleEnum.cs" />
+    <Compile Include="Common\Enum\TransactionTypeEnum.cs" />
     <Compile Include="Migrations\202305062008327_loginv1.cs" />
     <Compile Include="Migrations\202305062008327_loginv1.designer.cs">
       <DependentUpon>202305062008327_loginv1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202305070910561_new-one.cs" />
+    <Compile Include="Migrations\202305070910561_new-one.designer.cs">
+      <DependentUpon>202305070910561_new-one.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="NgoDbContext.cs" />
@@ -103,6 +109,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202305062008327_loginv1.resx">
       <DependentUpon>202305062008327_loginv1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202305070910561_new-one.resx">
+      <DependentUpon>202305070910561_new-one.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

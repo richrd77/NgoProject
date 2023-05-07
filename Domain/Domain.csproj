@@ -42,7 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Entity\Event.cs" />
+    <Compile Include="Models\Entity\Money.cs" />
     <Compile Include="Models\Entity\BaseEntity.cs" />
+    <Compile Include="Models\Entity\Role.cs" />
+    <Compile Include="Models\Entity\Transaction.cs" />
     <Compile Include="Models\Entity\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\IBaseRepository.cs" />
