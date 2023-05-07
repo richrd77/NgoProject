@@ -33,6 +33,12 @@
             width: 100%;
             font-family: inherit;
         }
+
+    .c-err {
+        color: var(--warn);
+        display: none;
+        font-size: 0.7rem;
+    }
 </style>
 
 <div class="s-control">
@@ -40,3 +46,21 @@
     <asp:DropDownList runat="server" ID="ddl">
     </asp:DropDownList>
 </div>
+<div class="c-err" runat="server" id="er"></div>
+<script>
+    function Validate(e) {
+        const t = e.target;
+        const err = t.parentElement.nextElementSibling;
+        const required = t.getAttribute('data-required');
+        console.log(t.parentElement.nextElementSibling);
+        if (required) {
+            t.setAttribute('required', '');
+            if (!t.value) {
+                err.style.display = 'block';
+            } else {
+                err.style.display = 'none';
+            }
+        }
+    }
+
+</script>

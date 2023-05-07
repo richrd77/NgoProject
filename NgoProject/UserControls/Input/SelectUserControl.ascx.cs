@@ -9,6 +9,7 @@ namespace NgoProject.UserControls.Input
     public partial class SelectUserControl : UserControl
     {
         private string _lblText;
+        private bool _required;
 
         public string LblText
         {
@@ -32,6 +33,27 @@ namespace NgoProject.UserControls.Input
             set
             {
                 ddl.SelectedValue = value;
+            }
+        }
+
+        public string ErrorMessage
+        {
+            set
+            {
+                er.InnerText = value;
+            }
+        }
+
+        public bool RequiredField
+        {
+            get
+            {
+                return _required;
+            }
+            set
+            {
+                ddl.Attributes.Add("data-required", value.ToString());
+                _required = value;
             }
         }
 

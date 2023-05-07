@@ -8,6 +8,7 @@ namespace NgoProject.UserControls.Input
     {
         private string _lblText;
         private TextBoxMode? _type;
+        private bool _required;
 
         public string LblText
         {
@@ -47,6 +48,27 @@ namespace NgoProject.UserControls.Input
             set
             {
                 txt1.Text = value;
+            }
+        }
+
+        public string ErrorMessage
+        {
+            set
+            {
+                er.InnerText = value;
+            }
+        }
+
+        public bool RequiredField 
+        {
+            get
+            {
+                return _required;
+            }
+            set
+            {
+                txt1.Attributes.Add("data-required", value.ToString());
+                _required = value;
             }
         }
 
