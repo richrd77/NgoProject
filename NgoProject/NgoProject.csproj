@@ -105,6 +105,8 @@
     <Content Include="Contact.aspx" />
     <Content Include="css\all.css" />
     <Content Include="Default.aspx" />
+    <Content Include="Donar.aspx" />
+    <Content Include="Fundraiser.aspx" />
     <Content Include="Global.asax" />
     <Content Include="images\about-us.jpg" />
     <Content Include="images\image1.jpg" />
@@ -127,6 +129,7 @@
     <Content Include="UserControls\Input\TextboxUserControl.ascx" />
     <Content Include="js\slider.js" />
     <Content Include="SQL Scripts\Table Initital scripts.sql" />
+    <Content Include="Event.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -157,6 +160,20 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Donar.aspx.cs">
+      <DependentUpon>Donar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Donar.aspx.designer.cs">
+      <DependentUpon>Donar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fundraiser.aspx.cs">
+      <DependentUpon>Fundraiser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fundraiser.aspx.designer.cs">
+      <DependentUpon>Fundraiser.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -203,6 +220,13 @@
     </Compile>
     <Compile Include="UserControls\Input\TextboxUserControl.ascx.designer.cs">
       <DependentUpon>TextboxUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Event.aspx.cs">
+      <DependentUpon>Event.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Event.aspx.designer.cs">
+      <DependentUpon>Event.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
