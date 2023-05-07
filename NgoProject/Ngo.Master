@@ -129,7 +129,7 @@
         }
 
         main.ngo-main {
-            height: calc(100vh - 7em);
+            min-height: calc(100vh - 7em);
             padding: 1em 2em;
         }
 
