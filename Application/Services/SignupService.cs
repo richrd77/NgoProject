@@ -14,5 +14,10 @@ namespace Application.Services
         public SignupService(IBaseRepository<User> baseRepository) : base(baseRepository)
         {
         }
+
+        public void Signup()
+        {
+
+        }
     }
 }

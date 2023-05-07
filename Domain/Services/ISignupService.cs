@@ -9,6 +9,6 @@ namespace Domain.Services
 {
     public interface ISignupService : IBaseService<User>
     {
-        
+        void Signup();
     }
 }

@@ -19,6 +19,7 @@ namespace Application.Services
         {
             builder.RegisterGeneric(typeof(BaseService<>)).As(typeof(IBaseService<>)).InstancePerLifetimeScope();
             builder.RegisterType<LoginService>().As<ILoginService>().InstancePerLifetimeScope();
+            builder.RegisterType<SignupService>().As<ISignupService>().InstancePerLifetimeScope();
             return builder;
         }
     }
