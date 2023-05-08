@@ -44,29 +44,31 @@
             <form runat="server" style="width: 100%;">
                 <h1>Sign up</h1>
                 <div class="c uname">
-                    <Ngo:Text runat="server" LblText="Name" ErrorMessage="Name is required" RequiredField="true" />
+                    <Ngo:Text runat="server" LblText="Name" ID="name" ErrorMessage="Name is required" RequiredField="true" />
                 </div>
                 <div class="c tel">
-                    <Ngo:Text runat="server" LblText="Mobile" ErrorMessage="Mobile is required" RequiredField="true" />
+                    <Ngo:Text runat="server" LblText="Mobile" ID="mobile" ErrorMessage="Mobile is required" RequiredField="true" />
                 </div>
                 <div class="c add">
-                    <Ngo:Text runat="server" LblText="address" ErrorMessage="address is required" RequiredField="true" />
+                    <Ngo:Text runat="server" LblText="address" ID="address" ErrorMessage="address is required" RequiredField="true" />
                 </div>
                 <div class="c email">
-                    <Ngo:Text runat="server" LblText="Email" ErrorMessage="Email is required" RequiredField="true" />
+                    <Ngo:Text runat="server" LblText="Email" ID="email" ErrorMessage="Email is required" RequiredField="true" />
                 </div>
                 <div class="c dob">
                     <Ngo:Date runat="server" ID="dob" LblText="Date of Birth" ErrorMessage="Date of Birth is required" RequiredField="true" />
                 </div>
                 <div class="c gen">
-                    <%--<Ngo:Text runat="server" LblText="Gender" />--%>
                     <Ngo:Select runat="server" ID="ddlgender" ErrorMessage="Gender is required" RequiredField="true" />
                 </div>
                 <div class="c pwd">
-                    <Ngo:Text runat="server" LblText="Password" Type="Password" ErrorMessage="Password is required" RequiredField="true" />
+                    <Ngo:Text runat="server" LblText="Password" ID="pwd" Type="Password" ErrorMessage="Password is required" RequiredField="true" />
+                </div>
+                <div class="c rol">
+                    <Ngo:Select runat="server" ID="ddlrole" ErrorMessage="Role is required" RequiredField="true" />
                 </div>
                 <div class="c login-action">
-                    <asp:Button runat="server" class="ngo-btn" ID="signBtn" Text="Sign up" OnClick="signBtn_Click" />
+                    <asp:Button runat="server" class="ngo-btn" ID="signBtn" Text="Sign up" OnClick="SignBtn_Click" />
                     <a runat="server" href="~/Login.aspx" class="sign-up">Login</a>
                 </div>
             </form>

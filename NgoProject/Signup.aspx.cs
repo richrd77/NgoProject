@@ -1,4 +1,4 @@
-﻿using Autofac.Integration.Web.Forms;
+﻿using Domain.Models.ViewModels;
 using Domain.Services;
 using System;
 using System.Collections.Generic;
@@ -15,13 +15,32 @@ namespace NgoProject
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            ddlgender.Source = new Dictionary<string, string> { { "-1", "Select Gender" }, { "M", "Male" }, { "F", "Female" } };
-            
+            ddlgender.Source = service.Genders;
+            ddlrole.Source = service.Roles;
         }
 
-        protected void signBtn_Click(object sender, EventArgs e)
+        protected void SignBtn_Click(object sender, EventArgs e)
         {
-            service.Signup();
+            var vm = new SignupViewModel()
+            {
+                Address = address.Value,
+                BirthDate = dob.Value,
+                Email = email.Value,
+                Gender = ddlgender.Value,
+                Mobile = mobile.Value,
+                Name = name.Value,
+                Password = pwd.Value,
+                Role = ddlrole.Value
+            };
+            if (this.IsModelValid<SignupViewModel>(vm))
+            {
+                var r = service.Signup(vm);
+
+                if (r.Item1)
+                {
+
+                }
+            }
         }
     }
 }

@@ -15,6 +15,42 @@ namespace NgoProject
     {
 
         /// <summary>
+        /// name control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::NgoProject.UserControls.Input.TextboxUserControl name;
+
+        /// <summary>
+        /// mobile control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::NgoProject.UserControls.Input.TextboxUserControl mobile;
+
+        /// <summary>
+        /// address control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::NgoProject.UserControls.Input.TextboxUserControl address;
+
+        /// <summary>
+        /// email control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::NgoProject.UserControls.Input.TextboxUserControl email;
+
+        /// <summary>
         /// dob control.
         /// </summary>
         /// <remarks>
@@ -31,6 +67,24 @@ namespace NgoProject
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::NgoProject.UserControls.Input.SelectUserControl ddlgender;
+
+        /// <summary>
+        /// pwd control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::NgoProject.UserControls.Input.TextboxUserControl pwd;
+
+        /// <summary>
+        /// ddlrole control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::NgoProject.UserControls.Input.SelectUserControl ddlrole;
 
         /// <summary>
         /// signBtn control.

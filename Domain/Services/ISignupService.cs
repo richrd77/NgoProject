@@ -1,4 +1,5 @@
 ﻿using Domain.Models.Entity;
+using Domain.Models.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,10 @@ namespace Domain.Services
 {
     public interface ISignupService : IBaseService<User>
     {
-        void Signup();
+        Dictionary<string, string> Roles { get; }
+        
+        Dictionary<string, string> Genders { get; }
+
+        Tuple<bool, User> Signup(SignupViewModel vm);
     }
 }
