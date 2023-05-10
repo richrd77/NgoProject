@@ -11,35 +11,8 @@ namespace NgoProject
 {
 
 
-    public partial class Signup
+    public partial class Event
     {
-
-        /// <summary>
-        /// errMsg control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl errMsg;
-
-        /// <summary>
-        /// successMsg control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl successMsg;
-
-        /// <summary>
-        /// ddlrole control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::NgoProject.UserControls.Input.SelectUserControl ddlrole;
 
         /// <summary>
         /// name control.
@@ -51,66 +24,66 @@ namespace NgoProject
         protected global::NgoProject.UserControls.Input.TextboxUserControl name;
 
         /// <summary>
-        /// mobile control.
+        /// detail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::NgoProject.UserControls.Input.TextboxUserControl mobile;
+        protected global::NgoProject.UserControls.Input.TextboxUserControl detail;
 
         /// <summary>
-        /// address control.
+        /// doe control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::NgoProject.UserControls.Input.TextboxUserControl address;
+        protected global::NgoProject.UserControls.Input.DatePickerUserControl doe;
 
         /// <summary>
-        /// email control.
+        /// dot control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::NgoProject.UserControls.Input.TextboxUserControl email;
+        protected global::NgoProject.UserControls.Input.TextboxUserControl dot;
 
         /// <summary>
-        /// dob control.
+        /// errMsg control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::NgoProject.UserControls.Input.DatePickerUserControl dob;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl errMsg;
 
         /// <summary>
-        /// ddlgender control.
+        /// succMsg control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::NgoProject.UserControls.Input.SelectUserControl ddlgender;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl succMsg;
 
         /// <summary>
-        /// pwd control.
+        /// submitBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::NgoProject.UserControls.Input.TextboxUserControl pwd;
+        protected global::System.Web.UI.WebControls.Button submitBtn;
 
         /// <summary>
-        /// signBtn control.
+        /// resetBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button signBtn;
+        protected global::System.Web.UI.WebControls.Button resetBtn;
     }
 }

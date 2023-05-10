@@ -43,6 +43,16 @@
         <div class="login-frm">
             <form runat="server" style="width: 100%;">
                 <h1>Sign up</h1>
+                
+                <div id="errMsg" runat="server" class="c err">
+                    <p>There is an error</p>
+                </div>
+                <div id="successMsg" runat="server" class="c err" style="color:green !important;">
+                    <p>Registration successful! Now you can <a style="text-decoration:underline !important;" href="Login.aspx">Login</a> here</p>
+                </div>
+                <div class="c rol">
+                    <Ngo:Select runat="server" ID="ddlrole" ErrorMessage="Role is required" RequiredField="true" />
+                </div>
                 <div class="c uname">
                     <Ngo:Text runat="server" LblText="Name" ID="name" ErrorMessage="Name is required" RequiredField="true" />
                 </div>
@@ -63,9 +73,6 @@
                 </div>
                 <div class="c pwd">
                     <Ngo:Text runat="server" LblText="Password" ID="pwd" Type="Password" ErrorMessage="Password is required" RequiredField="true" />
-                </div>
-                <div class="c rol">
-                    <Ngo:Select runat="server" ID="ddlrole" ErrorMessage="Role is required" RequiredField="true" />
                 </div>
                 <div class="c login-action">
                     <asp:Button runat="server" class="ngo-btn" ID="signBtn" Text="Sign up" OnClick="SignBtn_Click" />

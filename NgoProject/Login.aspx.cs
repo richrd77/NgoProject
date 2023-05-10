@@ -20,6 +20,33 @@ namespace NgoProject
             var result = service.Login(uname.Value, pwd.Value);
             if (result.Item1)
             {
+                if (result.Item2 != null)
+                {
+                    if(result.Item2.RoleId == 1)//Member
+                    {
+                        Response.Redirect("Member.aspx");
+                    }
+                    else if (result.Item2.RoleId == 2)//Volunteer
+                    {
+                        Response.Redirect("Volunteer.aspx");
+                    }
+                    else if (result.Item2.RoleId == 3)//Administrator
+                    {
+                        Response.Redirect("AdminHomePage.aspx");
+                    }
+                    else if (result.Item2.RoleId == 4)//Fund raiser
+                    {
+                        Response.Redirect("FundRaise.aspx");
+                    }
+                    else if (result.Item2.RoleId == 5)//Donar
+                    {
+                        Response.Redirect("Donar.aspx");
+                    }
+                    else
+                    {
+                        Response.Redirect("Member.aspx");
+                    }
+                }
                 errMsg.Style.Add(HtmlTextWriterStyle.Display, "none");
             }
             else

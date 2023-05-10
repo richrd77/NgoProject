@@ -17,6 +17,9 @@ namespace NgoProject
         {
             ddlgender.Source = service.Genders;
             ddlrole.Source = service.Roles;
+
+            errMsg.Style.Add(HtmlTextWriterStyle.Display, "none");
+            successMsg.Style.Add(HtmlTextWriterStyle.Display, "none");
         }
 
         protected void SignBtn_Click(object sender, EventArgs e)
@@ -38,7 +41,13 @@ namespace NgoProject
 
                 if (r.Item1)
                 {
-
+                    successMsg.Style.Add(HtmlTextWriterStyle.Display, "none");
+                    errMsg.Style.Add(HtmlTextWriterStyle.Display, "block");
+                }
+                else
+                {
+                    errMsg.Style.Add(HtmlTextWriterStyle.Display, "none");
+                    successMsg.Style.Add(HtmlTextWriterStyle.Display, "block");
                 }
             }
         }

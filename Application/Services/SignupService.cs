@@ -23,9 +23,9 @@ namespace Application.Services
         public Dictionary<string, string> Roles => new Dictionary<string, string>
         {
             { "-1", "----Select Role----" },
-            { ((int)RoleEnum.Member).ToString(), RoleEnum.Member.ToString() },
+            //{ ((int)RoleEnum.Member).ToString(), RoleEnum.Member.ToString() },
             { ((int)RoleEnum.Volunteer).ToString(), RoleEnum.Volunteer.ToString() },
-            { ((int)RoleEnum.Administrator).ToString(), RoleEnum.Administrator.ToString() },
+            //{ ((int)RoleEnum.Administrator).ToString(), RoleEnum.Administrator.ToString() },
             { ((int)RoleEnum.FundRaiser).ToString(), RoleEnum.FundRaiser.ToString() },
             { ((int)RoleEnum.Donar).ToString(), RoleEnum.Donar.ToString() }
         };
