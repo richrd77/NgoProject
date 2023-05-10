@@ -1,6 +1,6 @@
-﻿<%@ Page Title="Volunteer" Language="C#" MasterPageFile="~/User.Master" AutoEventWireup="true" CodeBehind="Volunteer.aspx.cs" Inherits="NgoProject.Volunteer" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="FundRaise_Admin.aspx.cs" Inherits="NgoProject.FundRaise_Admin" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="body" runat="server">
+
 <style>
     .mydatagrid
 {
@@ -84,23 +84,14 @@ padding: 5px;
 }
 </style>
             <form runat="server" style="width: 100%;">
-                <h1>List of Events</h1>
-<br /> <br />             
-                <div id="successMsg" runat="server" class="c err" style="color: green;">
-                    <p>You have joined the event now!</p>
-                </div>       
-                <br />
-                <asp:GridView ID="EventGridData" CssClass="mydatagrid" PagerStyle-CssClass="pager"
- HeaderStyle-CssClass="header" AutoGenerateColumns="false" RowStyle-CssClass="rows" OnRowCommand="EventGridData_RowCommand" runat="server">
+                <h1>List of Fund raiser</h1>
+<br /> <br />
+                <asp:GridView ID="FundRaiserGridData" CssClass="mydatagrid" PagerStyle-CssClass="pager"
+ HeaderStyle-CssClass="header" AutoGenerateColumns="false" RowStyle-CssClass="rows" runat="server">
                     <Columns>
                     <asp:BoundField DataField="name" HeaderText="Name" /> 
-                    <asp:BoundField DataField="detail" HeaderText="Detail" /> 
+                    <asp:BoundField DataField="amount" HeaderText="Amount" /> 
                     <asp:BoundField DataField="date" HeaderText="Date" /> 
-                        <asp:TemplateField HeaderText ="">  
-      <ItemTemplate>  <asp:LinkButton Style="color: blue !important; text-decoration: underline;" ID="lnkJoin" runat ="server" CommandArgument='<%#Eval("id")%>' Text="Join the event"></asp:LinkButton>
-                          
-      </ItemTemplate>  
-    </asp:TemplateField> 
                         </Columns>
                 </asp:GridView>
             </form>

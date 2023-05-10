@@ -26,5 +26,12 @@ namespace Application.Services
 
             return true;
         }
+
+        public new List<Event> GetAll()
+        {
+            List<Event> eventList = this.baseRepository.GetAll();
+
+            return eventList;
+        }
     }
 }

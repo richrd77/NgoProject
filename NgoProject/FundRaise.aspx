@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Fund raiser" Language="C#" MasterPageFile="~/Ngo.Master" AutoEventWireup="true" CodeBehind="FundRaise.aspx.cs" Inherits="NgoProject.FundRaise" %>
+﻿<%@ Page Title="Fund raiser" Language="C#" MasterPageFile="~/User.Master" AutoEventWireup="true" CodeBehind="FundRaise.aspx.cs" Inherits="NgoProject.FundRaise" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="body" runat="server">
     <style>
         .login-wrapper {
@@ -52,7 +52,7 @@
                 <div class="c amount">
                     <Ngo:Text runat="server" ID="doAmount" LblText="Amount" />
                 </div>
-                <div class="c dob" style="pointer-events: none;">
+                <div class="c dob">
                     <Ngo:Date runat="server" ID="dod" Value="" LblText="Date of Fund Raise" />
                 </div>
                 <div class="c paymentmethod" style="pointer-events: none;">

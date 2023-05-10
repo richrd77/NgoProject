@@ -1,5 +1,6 @@
 ﻿using Domain.Models.Entity;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 
@@ -57,5 +58,7 @@ namespace Domain.Services
         /// Saves Changes
         /// </summary>
         void Save();
+
+        List<dbEntity> GetAll();
     }
 }

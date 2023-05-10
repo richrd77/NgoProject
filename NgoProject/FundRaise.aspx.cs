@@ -31,13 +31,17 @@ namespace NgoProject
 
             var result = service.Donate(objMoney);
 
+
             if (result)
             {
                 errMsg.Style.Add(HtmlTextWriterStyle.Display, "none");
+                succMsg.Style.Add(HtmlTextWriterStyle.Display, "block");
             }
             else
             {
                 errMsg.Style.Add(HtmlTextWriterStyle.Display, "block");
+                succMsg.Style.Add(HtmlTextWriterStyle.Display, "none");
+
             }
         }
 

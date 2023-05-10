@@ -1,5 +1,6 @@
 ﻿using Domain.Models.Entity;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 
@@ -57,5 +58,10 @@ namespace Domain.Repositories
         /// Saves the changes to DB
         /// </summary>
         void Save();
+
+        /// <summary>
+        /// Fetch all the records from DB
+        /// </summary>
+        List<dbEntity> GetAll();
     }
 }

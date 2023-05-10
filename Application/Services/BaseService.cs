@@ -53,5 +53,10 @@ namespace Application.Services
         {
             return baseRepository.Update(item);
         }
+
+        public List<dbEntity> GetAll()
+        {
+            return baseRepository.GetAll();
+        }
     }
 }

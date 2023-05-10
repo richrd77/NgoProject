@@ -81,6 +81,11 @@ namespace Application.Repositories
             context.SaveChanges();
         }
 
+        public List<dbEntity> GetAll()
+        {
+            return CurrentTable.ToList();
+        }
+
         public dbEntity Update(dbEntity item)
         {
             context.Entry<dbEntity>(item).State = EntityState.Modified;

@@ -11,25 +11,25 @@ namespace NgoProject
 {
 
 
-    public partial class Volunteer
+    public partial class User
     {
 
         /// <summary>
-        /// successMsg control.
+        /// body control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl successMsg;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder body;
 
         /// <summary>
-        /// EventGridData control.
+        /// copyyear control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView EventGridData;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl copyyear;
     }
 }

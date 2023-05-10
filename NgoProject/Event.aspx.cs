@@ -14,6 +14,8 @@ namespace NgoProject
         public IEventService service { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
+            EventGridData.DataSource = service.GetAll();
+            EventGridData.DataBind();
         }
 
         protected void submitBtn_Click(object sender, EventArgs e)
@@ -28,10 +30,14 @@ namespace NgoProject
             if (result)
             {
                 errMsg.Style.Add(HtmlTextWriterStyle.Display, "none");
+                succMsg.Style.Add(HtmlTextWriterStyle.Display, "block");
+                EventGridData.DataSource = service.GetAll();
+                EventGridData.DataBind();
             }
             else
             {
                 errMsg.Style.Add(HtmlTextWriterStyle.Display, "block");
+                succMsg.Style.Add(HtmlTextWriterStyle.Display, "none");
             }
         }
 

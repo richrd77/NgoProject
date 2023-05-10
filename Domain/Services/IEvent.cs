@@ -10,5 +10,6 @@ namespace Domain.Services
     public interface IEventService : IBaseService<Event>
     {
         bool Event(Event objevent);
+        new List<Event> GetAll();
     }
 }

@@ -10,5 +10,6 @@ namespace Domain.Services
     public interface IDonorService : IBaseService<Money>
     {
         bool Donate(Money money);
+        new List<Money> GetAll();
     }
 }

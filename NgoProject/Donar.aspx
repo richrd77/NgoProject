@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Ngo.Master" AutoEventWireup="true" CodeBehind="Donar.aspx.cs" Inherits="NgoProject.Donar" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/User.Master" AutoEventWireup="true" CodeBehind="Donar.aspx.cs" Inherits="NgoProject.Donar" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="body" runat="server">
     <style>
         .login-wrapper {

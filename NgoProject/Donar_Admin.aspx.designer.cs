@@ -11,25 +11,16 @@ namespace NgoProject
 {
 
 
-    public partial class Volunteer
+    public partial class Donar_Admin
     {
 
         /// <summary>
-        /// successMsg control.
+        /// DonarGridData control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl successMsg;
-
-        /// <summary>
-        /// EventGridData control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView EventGridData;
+        protected global::System.Web.UI.WebControls.GridView DonarGridData;
     }
 }

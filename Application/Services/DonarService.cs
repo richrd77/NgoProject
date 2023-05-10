@@ -26,5 +26,11 @@ namespace Application.Services
 
             return true;
         }
+        public new List<Money> GetAll()
+        {
+            List<Money> eventList = this.baseRepository.GetAll();
+
+            return eventList;
+        }
     }
 }
