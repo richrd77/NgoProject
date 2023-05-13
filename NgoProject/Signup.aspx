@@ -37,42 +37,41 @@
             cursor: pointer;
             user-select: none;
         }
-
     </style>
     <div class="login-wrapper">
         <div class="login-frm">
             <form runat="server" style="width: 100%;">
                 <h1>Sign up</h1>
-                
+
                 <div id="errMsg" runat="server" class="c err">
                     <p>There is an error</p>
                 </div>
-                <div id="successMsg" runat="server" class="c err" style="color:green !important;">
-                    <p>Registration successful! Now you can <a style="text-decoration:underline !important;" href="Login.aspx">Login</a> here</p>
+                <div id="successMsg" runat="server" class="c err" style="color: green !important;">
+                    <p>Registration successful! Now you can <a style="text-decoration: underline !important;" href="Login.aspx">Login</a> here</p>
                 </div>
                 <div class="c rol">
-                    <Ngo:Select runat="server" ID="ddlrole" ErrorMessage="Role is required" RequiredField="true" />
+                    <ngo:select runat="server" id="ddlrole" errormessage="Role is required" requiredfield="true" />
                 </div>
                 <div class="c uname">
-                    <Ngo:Text runat="server" LblText="Name" ID="name" ErrorMessage="Name is required" RequiredField="true" />
+                    <ngo:text runat="server" lbltext="Name" id="name" errormessage="Name is required" requiredfield="true" />
                 </div>
                 <div class="c tel">
-                    <Ngo:Text runat="server" LblText="Mobile" ID="mobile" ErrorMessage="Mobile is required" RequiredField="true" />
+                    <ngo:text runat="server" lbltext="Mobile" id="mobile" errormessage="Mobile is required" requiredfield="true" />
                 </div>
                 <div class="c add">
-                    <Ngo:Text runat="server" LblText="address" ID="address" ErrorMessage="address is required" RequiredField="true" />
+                    <ngo:text runat="server" lbltext="address" id="address" errormessage="address is required" requiredfield="true" />
                 </div>
                 <div class="c email">
-                    <Ngo:Text runat="server" LblText="Email" ID="email" ErrorMessage="Email is required" RequiredField="true" />
+                    <ngo:text runat="server" lbltext="Email" id="email" errormessage="Email is required" requiredfield="true" />
                 </div>
                 <div class="c dob">
-                    <Ngo:Date runat="server" ID="dob" LblText="Date of Birth" ErrorMessage="Date of Birth is required" RequiredField="true" />
+                    <ngo:date runat="server" id="dob" lbltext="Date of Birth" errormessage="Date of Birth is required" requiredfield="true" />
                 </div>
                 <div class="c gen">
-                    <Ngo:Select runat="server" ID="ddlgender" ErrorMessage="Gender is required" RequiredField="true" />
+                    <ngo:select runat="server" id="ddlgender" errormessage="Gender is required" requiredfield="true" />
                 </div>
                 <div class="c pwd">
-                    <Ngo:Text runat="server" LblText="Password" ID="pwd" Type="Password" ErrorMessage="Password is required" RequiredField="true" />
+                    <ngo:text runat="server" lbltext="Password" id="pwd" type="Password" errormessage="Password is required" requiredfield="true" />
                 </div>
                 <div class="c login-action">
                     <asp:Button runat="server" class="ngo-btn" ID="signBtn" Text="Sign up" OnClick="SignBtn_Click" />

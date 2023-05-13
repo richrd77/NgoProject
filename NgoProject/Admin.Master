@@ -226,7 +226,7 @@
         </button>
         <nav id="nav">
             <ul class="ngo-links">
-                <%--<li class="ngo-link"><a runat="server" href="~/">Members</a></li>--%>
+                <li class="ngo-link"><a runat="server" href="~/Member_Admin.aspx">Members</a></li>
                 <li class="ngo-link"><a runat="server" href="~/Donar_Admin.aspx">Donar</a></li>
                 <li class="ngo-link"><a runat="server" href="~/Volunteer_Admin.aspx">Volunteer</a></li>
                 <li class="ngo-link"><a runat="server" href="~/FundRaise_Admin.aspx">Fund raise</a></li>

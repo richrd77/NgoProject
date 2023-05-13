@@ -22,6 +22,7 @@ namespace Application.Services
             builder.RegisterType<SignupService>().As<ISignupService>().InstancePerLifetimeScope();
             builder.RegisterType<DonarService>().As<IDonorService>().InstancePerLifetimeScope();
             builder.RegisterType<EventService>().As<IEventService>().InstancePerLifetimeScope();
+            builder.RegisterType<MemberService>().As<IMemberService>().InstancePerLifetimeScope();
             return builder;
         }
     }

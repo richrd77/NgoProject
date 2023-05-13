@@ -12,6 +12,7 @@ namespace Application
             modelBuilder.Entity<Money>().ToTable("Money").HasKey(u => u.Id).HasRequired(u => u.TransactionType).WithMany(r => r.Transactions);
             modelBuilder.Entity<Transaction>().ToTable("Transaction").HasKey(u => u.Id).HasMany(r => r.Transactions).WithRequired(u => u.TransactionType);
             modelBuilder.Entity<Event>().ToTable("Event").HasKey(u => u.Id);
+            modelBuilder.Entity<Member>().ToTable("Member").HasKey(u => u.Id);
         }
     }
 }
