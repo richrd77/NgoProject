@@ -1,6 +1,11 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="Member_Admin.aspx.cs" Inherits="NgoProject.Member_Admin" %>
+﻿<%@ Page Title="Members" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="Member_Admin.aspx.cs" Inherits="NgoProject.Member_Admin" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="body" runat="server">
     <style>
+        
+        .err{
+            color: var(--warn);
+            font-size:0.7rem;
+        }
         .login-wrapper {
             height: 100%;
             display: flex;
@@ -48,15 +53,19 @@
                 <h1>Members</h1>
                 <div class="c uname">
                     <Ngo:Text runat="server" ID="doName" LblText="Name"  errormessage="Name is required" requiredfield="true" />
+                <label id="errdoName" runat="server" class="err" style="display: none;">Name is required</label>
                 </div>
                 <div class="c dob">
                     <Ngo:Date runat="server" ID="doj" Value="" LblText="Join date"  errormessage="Join date is required" requiredfield="true"/>
+                <label id="errdoj" runat="server" class="err" style="display: none;">Join date is required</label>
                 </div>
                 <div class="c dob">
                     <Ngo:Date runat="server" ID="dor" Value="" LblText="End date"  errormessage="End date is required" requiredfield="true"/>
+                <label id="errdor" runat="server" class="err" style="display: none;">End date is required</label>
                 </div>
                 <div class="c usertype">
                     <ngo:select runat="server" id="ddlTypeofuser"  errormessage="Type of user is required" requiredfield="true"/>
+                    <label id="errddlTypeofuser" runat="server" class="err" style="display: none;">Type of user is required</label>
                 </div>
                 <div id="errMsg" runat="server" class="c err">
                     <p>There is an error</p>

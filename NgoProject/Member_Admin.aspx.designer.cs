@@ -24,6 +24,15 @@ namespace NgoProject
         protected global::NgoProject.UserControls.Input.TextboxUserControl doName;
 
         /// <summary>
+        /// errdoName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl errdoName;
+
+        /// <summary>
         /// doj control.
         /// </summary>
         /// <remarks>
@@ -31,6 +40,15 @@ namespace NgoProject
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::NgoProject.UserControls.Input.DatePickerUserControl doj;
+
+        /// <summary>
+        /// errdoj control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl errdoj;
 
         /// <summary>
         /// dor control.
@@ -42,6 +60,15 @@ namespace NgoProject
         protected global::NgoProject.UserControls.Input.DatePickerUserControl dor;
 
         /// <summary>
+        /// errdor control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl errdor;
+
+        /// <summary>
         /// ddlTypeofuser control.
         /// </summary>
         /// <remarks>
@@ -49,6 +76,15 @@ namespace NgoProject
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::NgoProject.UserControls.Input.SelectUserControl ddlTypeofuser;
+
+        /// <summary>
+        /// errddlTypeofuser control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl errddlTypeofuser;
 
         /// <summary>
         /// errMsg control.

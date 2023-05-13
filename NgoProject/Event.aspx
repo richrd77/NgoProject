@@ -2,6 +2,10 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="body" runat="server">
     
     <style>
+        .err{
+            color: var(--warn);
+            font-size:0.7rem;
+        }
         .login-wrapper {
             height: 100%;
             display: flex;
@@ -49,12 +53,15 @@
                 <h1>Events</h1>
                 <div class="c uname">
                     <Ngo:Text runat="server" ID="name" LblText="Name" />
+                    <label id="errname" runat="server" class="err" style="display: none;">Name is required</label>
                 </div>
                 <div class="c Detail">
                     <Ngo:Text runat="server" ID="detail" LblText="Detail" />
+                    <label id="errdetail" runat="server" class="err" style="display: none;">Detail is required</label>
                 </div>
                 <div class="c dob">
                     <Ngo:Date runat="server" ID="doe" LblText="Date of Event" />
+                    <label id="errdoe" runat="server" class="err" style="display: none;">Date of Event is required</label>
                 </div>
                 <div class="c dob">
                     <Ngo:Text runat="server" ID="dot" LblText="Time of Event" />

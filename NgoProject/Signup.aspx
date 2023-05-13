@@ -2,6 +2,10 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="body" runat="server">
     <style>
+        .err{
+            color: var(--warn);
+            font-size:0.7rem;
+        }
         .login-wrapper {
             height: 100%;
             display: flex;
@@ -51,27 +55,35 @@
                 </div>
                 <div class="c rol">
                     <ngo:select runat="server" id="ddlrole" errormessage="Role is required" requiredfield="true" />
+                    <label id="errRole" runat="server" class="err" style="display: none;">Role is required</label>
                 </div>
                 <div class="c uname">
                     <ngo:text runat="server" lbltext="Name" id="name" errormessage="Name is required" requiredfield="true" />
+                    <label id="errName" runat="server" class="err" style="display: none;">Name is required</label>
                 </div>
                 <div class="c tel">
                     <ngo:text runat="server" lbltext="Mobile" id="mobile" errormessage="Mobile is required" requiredfield="true" />
+                    <label id="errMobile" runat="server" class="err" style="display: none;">Mobile is required</label>
                 </div>
                 <div class="c add">
                     <ngo:text runat="server" lbltext="address" id="address" errormessage="address is required" requiredfield="true" />
+                    <label id="errAddress" runat="server" class="err" style="display: none;">Address is required</label>
                 </div>
                 <div class="c email">
                     <ngo:text runat="server" lbltext="Email" id="email" errormessage="Email is required" requiredfield="true" />
+                    <label id="errEmail" runat="server" class="err" style="display: none;">Email is required</label>
                 </div>
                 <div class="c dob">
                     <ngo:date runat="server" id="dob" lbltext="Date of Birth" errormessage="Date of Birth is required" requiredfield="true" />
+                    <label id="errDOB" runat="server" class="err" style="display: none;">Date of Birth is required</label>
                 </div>
                 <div class="c gen">
                     <ngo:select runat="server" id="ddlgender" errormessage="Gender is required" requiredfield="true" />
+                    <label id="errGender" runat="server" class="err" style="display: none;">Gender is required</label>
                 </div>
                 <div class="c pwd">
                     <ngo:text runat="server" lbltext="Password" id="pwd" type="Password" errormessage="Password is required" requiredfield="true" />
+                    <label id="errPassword" runat="server" class="err" style="display: none;">Password is required</label>
                 </div>
                 <div class="c login-action">
                     <asp:Button runat="server" class="ngo-btn" ID="signBtn" Text="Sign up" OnClick="SignBtn_Click" />

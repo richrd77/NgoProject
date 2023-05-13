@@ -20,24 +20,51 @@ namespace NgoProject
 
         protected void submitBtn_Click(object sender, EventArgs e)
         {
-            Domain.Models.Entity.Event objEvent = new Domain.Models.Entity.Event();
-            objEvent.Detail = detail.Value;
-            objEvent.Date = Convert.ToDateTime(doe.Value);
-            objEvent.Name = name.Value;
+            if (detail.Value == "")
+                errdetail.Style.Add(HtmlTextWriterStyle.Display, "block");
+            else
+                errdetail.Style.Add(HtmlTextWriterStyle.Display, "none");
 
-            var result = service.Event(objEvent);
+            if (doe.Value == "")
+                errdoe.Style.Add(HtmlTextWriterStyle.Display, "block");
+            else
+                errdoe.Style.Add(HtmlTextWriterStyle.Display, "none");
 
-            if (result)
-            {
-                errMsg.Style.Add(HtmlTextWriterStyle.Display, "none");
-                succMsg.Style.Add(HtmlTextWriterStyle.Display, "block");
-                EventGridData.DataSource = service.GetAll();
-                EventGridData.DataBind();
+            if (name.Value == "")
+                errname.Style.Add(HtmlTextWriterStyle.Display, "block");
+            else
+                errname.Style.Add(HtmlTextWriterStyle.Display, "none");
+
+            if (detail.Value != "" && doe.Value != "" && name.Value != "") {
+
+                Domain.Models.Entity.Event objEvent = new Domain.Models.Entity.Event();
+                objEvent.Detail = detail.Value;
+                objEvent.Date = Convert.ToDateTime(doe.Value);
+                objEvent.Name = name.Value;
+
+                var result = service.Event(objEvent);
+
+                if (result)
+                {
+                    errMsg.Style.Add(HtmlTextWriterStyle.Display, "none");
+                    succMsg.Style.Add(HtmlTextWriterStyle.Display, "block");
+
+                    EventGridData.DataSource = service.GetAll();
+                    EventGridData.DataBind();
+
+                    detail.Value = "";
+                    doe.Value = "";
+                    name.Value = "";
+                }
+                else
+                {
+                    errMsg.Style.Add(HtmlTextWriterStyle.Display, "block");
+                    succMsg.Style.Add(HtmlTextWriterStyle.Display, "none");
+                }
             }
             else
             {
-                errMsg.Style.Add(HtmlTextWriterStyle.Display, "block");
-                succMsg.Style.Add(HtmlTextWriterStyle.Display, "none");
+
             }
         }
 

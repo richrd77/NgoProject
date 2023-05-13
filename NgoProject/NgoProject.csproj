@@ -129,6 +129,7 @@
     <Content Include="Login.aspx" />
     <Content Include="Member_Admin.aspx" />
     <Content Include="Signup.aspx" />
+    <Content Include="SQL Scripts\Member table scripts.sql" />
     <Content Include="UserControls\Input\DatePickerUserControl.ascx" />
     <Content Include="UserControls\Input\SelectUserControl.ascx" />
     <Content Include="UserControls\Input\TextboxUserControl.ascx" />

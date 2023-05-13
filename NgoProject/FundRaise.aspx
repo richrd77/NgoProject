@@ -1,6 +1,10 @@
 ﻿<%@ Page Title="Fund raiser" Language="C#" MasterPageFile="~/User.Master" AutoEventWireup="true" CodeBehind="FundRaise.aspx.cs" Inherits="NgoProject.FundRaise" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="body" runat="server">
     <style>
+        .err {
+            color: var(--warn);
+            font-size: 0.7rem;
+        }
         .login-wrapper {
             height: 100%;
             display: flex;
@@ -48,12 +52,15 @@
                 <h1>Fund raiser</h1>
                 <div class="c uname">
                     <Ngo:Text runat="server" ID="doName" LblText="Name" />
+                    <label id="errName" runat="server" class="err" style="display: none;">Name is required</label>
                 </div>
                 <div class="c amount">
                     <Ngo:Text runat="server" ID="doAmount" LblText="Amount" />
+                    <label id="errAmount" runat="server" class="err" style="display: none;">Amount is required</label>
                 </div>
                 <div class="c dob">
                     <Ngo:Date runat="server" ID="dod" Value="" LblText="Date of Fund Raise" />
+                    <label id="errdod" runat="server" class="err" style="display: none;">Date of Fund raise is required</label>
                 </div>
                 <div class="c paymentmethod" style="pointer-events: none;">
                     <Ngo:Text runat="server" ID="paymentmethod" LblText="Payment method" Value="Cash" />

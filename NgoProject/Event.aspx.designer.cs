@@ -24,6 +24,15 @@ namespace NgoProject
         protected global::NgoProject.UserControls.Input.TextboxUserControl name;
 
         /// <summary>
+        /// errname control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl errname;
+
+        /// <summary>
         /// detail control.
         /// </summary>
         /// <remarks>
@@ -33,6 +42,15 @@ namespace NgoProject
         protected global::NgoProject.UserControls.Input.TextboxUserControl detail;
 
         /// <summary>
+        /// errdetail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl errdetail;
+
+        /// <summary>
         /// doe control.
         /// </summary>
         /// <remarks>
@@ -40,6 +58,15 @@ namespace NgoProject
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::NgoProject.UserControls.Input.DatePickerUserControl doe;
+
+        /// <summary>
+        /// errdoe control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl errdoe;
 
         /// <summary>
         /// dot control.

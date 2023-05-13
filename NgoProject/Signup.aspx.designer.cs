@@ -42,6 +42,15 @@ namespace NgoProject
         protected global::NgoProject.UserControls.Input.SelectUserControl ddlrole;
 
         /// <summary>
+        /// errRole control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl errRole;
+
+        /// <summary>
         /// name control.
         /// </summary>
         /// <remarks>
@@ -49,6 +58,15 @@ namespace NgoProject
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::NgoProject.UserControls.Input.TextboxUserControl name;
+
+        /// <summary>
+        /// errName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl errName;
 
         /// <summary>
         /// mobile control.
@@ -60,6 +78,15 @@ namespace NgoProject
         protected global::NgoProject.UserControls.Input.TextboxUserControl mobile;
 
         /// <summary>
+        /// errMobile control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl errMobile;
+
+        /// <summary>
         /// address control.
         /// </summary>
         /// <remarks>
@@ -67,6 +94,15 @@ namespace NgoProject
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::NgoProject.UserControls.Input.TextboxUserControl address;
+
+        /// <summary>
+        /// errAddress control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl errAddress;
 
         /// <summary>
         /// email control.
@@ -78,6 +114,15 @@ namespace NgoProject
         protected global::NgoProject.UserControls.Input.TextboxUserControl email;
 
         /// <summary>
+        /// errEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl errEmail;
+
+        /// <summary>
         /// dob control.
         /// </summary>
         /// <remarks>
@@ -85,6 +130,15 @@ namespace NgoProject
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::NgoProject.UserControls.Input.DatePickerUserControl dob;
+
+        /// <summary>
+        /// errDOB control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl errDOB;
 
         /// <summary>
         /// ddlgender control.
@@ -96,6 +150,15 @@ namespace NgoProject
         protected global::NgoProject.UserControls.Input.SelectUserControl ddlgender;
 
         /// <summary>
+        /// errGender control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl errGender;
+
+        /// <summary>
         /// pwd control.
         /// </summary>
         /// <remarks>
@@ -103,6 +166,15 @@ namespace NgoProject
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::NgoProject.UserControls.Input.TextboxUserControl pwd;
+
+        /// <summary>
+        /// errPassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl errPassword;
 
         /// <summary>
         /// signBtn control.

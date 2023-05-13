@@ -22,26 +22,50 @@ namespace NgoProject
 
         protected void submitBtn_Click(object sender, EventArgs e)
         {
-            Money objMoney = new Money();
-            objMoney.Amount = Convert.ToDouble(doAmount.Value);
-            objMoney.Date = Convert.ToDateTime(dod.Value);
-            objMoney.Name = doName.Value;
-            objMoney.TransactionTypeId = 2;
-            objMoney.TransactionType = new Transaction { Type = TransactionTypeEnum.FundRaise.ToString() };
+            if (doAmount.Value == "")
+                errAmount.Style.Add(HtmlTextWriterStyle.Display, "block");
+            else
+                errAmount.Style.Add(HtmlTextWriterStyle.Display, "none");
 
-            var result = service.Donate(objMoney);
+            if (dod.Value == "")
+                errdod.Style.Add(HtmlTextWriterStyle.Display, "block");
+            else
+                errdod.Style.Add(HtmlTextWriterStyle.Display, "none");
 
+            if (doName.Value == "")
+                errName.Style.Add(HtmlTextWriterStyle.Display, "block");
+            else
+                errName.Style.Add(HtmlTextWriterStyle.Display, "none");
 
-            if (result)
+            if (doAmount.Value != "" && dod.Value != "" && doName.Value != "")
             {
-                errMsg.Style.Add(HtmlTextWriterStyle.Display, "none");
-                succMsg.Style.Add(HtmlTextWriterStyle.Display, "block");
+
+                Money objMoney = new Money();
+                objMoney.Amount = Convert.ToDouble(doAmount.Value);
+                objMoney.Date = Convert.ToDateTime(dod.Value);
+                objMoney.Name = doName.Value;
+                objMoney.TransactionTypeId = 2;
+                objMoney.TransactionType = new Transaction { Type = TransactionTypeEnum.FundRaise.ToString() };
+
+                var result = service.Donate(objMoney);
+
+                if (result)
+                {
+                    errMsg.Style.Add(HtmlTextWriterStyle.Display, "none");
+                    succMsg.Style.Add(HtmlTextWriterStyle.Display, "block");
+
+                    doAmount.Value = "";
+                    doName.Value = "";
+                    dod.Value = "";
+                }
+                else
+                {
+                    errMsg.Style.Add(HtmlTextWriterStyle.Display, "block");
+                    succMsg.Style.Add(HtmlTextWriterStyle.Display, "none");
+                }
             }
             else
             {
-                errMsg.Style.Add(HtmlTextWriterStyle.Display, "block");
-                succMsg.Style.Add(HtmlTextWriterStyle.Display, "none");
-
             }
         }
 
@@ -49,6 +73,7 @@ namespace NgoProject
         {
             doAmount.Value = "";
             doName.Value = "";
+            dod.Value = "";
         }
     }
 }

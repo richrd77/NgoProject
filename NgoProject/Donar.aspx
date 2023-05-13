@@ -1,6 +1,12 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/User.Master" AutoEventWireup="true" CodeBehind="Donar.aspx.cs" Inherits="NgoProject.Donar" %>
+﻿<%@ Page Title="Donar" Language="C#" MasterPageFile="~/User.Master" AutoEventWireup="true" CodeBehind="Donar.aspx.cs" Inherits="NgoProject.Donar" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="body" runat="server">
     <style>
+        .err {
+            color: var(--warn);
+            font-size: 0.7rem;
+        }
+
         .login-wrapper {
             height: 100%;
             display: flex;
@@ -48,23 +54,26 @@
                 <h1>Donate</h1>
                 <div class="c uname">
                     <Ngo:Text runat="server" ID="doName" LblText="Name" />
+                    <label id="errName" runat="server" class="err" style="display: none;">Name is required</label>
                 </div>
                 <div class="c amount">
                     <Ngo:Text runat="server" ID="doAmount" LblText="Amount" />
+                    <label id="errAmount" runat="server" class="err" style="display: none;">Amount is required</label>
                 </div>
                 <div class="c dob">
                     <Ngo:Date runat="server" ID="dod" LblText="Date of Donation" />
+                    <label id="errdod" runat="server" class="err" style="display: none;">Date of Donation is required</label>
                 </div>
                 <div class="c paymentmethod" style="pointer-events: none;">
                     <Ngo:Text runat="server" ID="paymentmethod" LblText="Payment method" Value="Cash" />
-                </div>                
+                </div>
                 <div id="errMsg" runat="server" class="c err">
                     <p>There is an error</p>
-                </div>                
-                <div id="succMsg" runat="server" class="c err"  style="color: green;">
+                </div>
+                <div id="succMsg" runat="server" class="c err" style="color: green;">
                     <p>Thanks!. Your entry saved.</p>
                 </div>
-                <div class="c"  style="text-align:center">
+                <div class="c" style="text-align: center">
                     <asp:Button runat="server" class="ngo-btn" ID="submitBtn" Text="Submit" OnClick="submitBtn_Click" />
                     <asp:Button runat="server" class="ngo-btn" ID="resetBtn" Text="Reset" OnClick="resetBtn_Click" />
                 </div>

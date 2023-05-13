@@ -231,7 +231,7 @@
                 <li class="ngo-link"><a runat="server" href="~/Login.aspx">Donar</a></li>
                 <li class="ngo-link"><a runat="server" href="~/Login.aspx">Volunteer</a></li>
                 <li class="ngo-link"><a runat="server" href="~/Login.aspx">Fund raiser</a></li>
-                <li class="ngo-link"><a runat="server" href="~/Signup.aspx">Register</a></li>
+                <li class="ngo-link"><a runat="server" href="~/Signup.aspx">Sign up</a></li>
                 <li class="ngo-link"><a runat="server" href="~/Login.aspx">Admin</a></li>
             </ul>
         </nav>

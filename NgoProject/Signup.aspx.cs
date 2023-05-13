@@ -15,8 +15,11 @@ namespace NgoProject
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            ddlgender.Source = service.Genders;
-            ddlrole.Source = service.Roles;
+            if (!Page.IsPostBack)
+            {
+                ddlgender.Source = service.Genders;
+                ddlrole.Source = service.Roles;
+            }
 
             errMsg.Style.Add(HtmlTextWriterStyle.Display, "none");
             successMsg.Style.Add(HtmlTextWriterStyle.Display, "none");
@@ -24,7 +27,47 @@ namespace NgoProject
 
         protected void SignBtn_Click(object sender, EventArgs e)
         {
-            if(mobile.Value.Length > 10)
+            if(ddlrole.Value == "-1")
+                errRole.Style.Add(HtmlTextWriterStyle.Display, "block");
+            else
+                errRole.Style.Add(HtmlTextWriterStyle.Display, "none");
+
+            if (ddlgender.Value == "-1")
+                errGender.Style.Add(HtmlTextWriterStyle.Display, "block");
+            else
+                errGender.Style.Add(HtmlTextWriterStyle.Display, "none");
+
+            if (mobile.Value == "")
+                errMobile.Style.Add(HtmlTextWriterStyle.Display, "block");
+            else
+                errMobile.Style.Add(HtmlTextWriterStyle.Display, "none");
+
+            if (name.Value == "")
+                errName.Style.Add(HtmlTextWriterStyle.Display, "block");
+            else
+                errName.Style.Add(HtmlTextWriterStyle.Display, "none");
+
+            if (address.Value == "")
+                errAddress.Style.Add(HtmlTextWriterStyle.Display, "block");
+            else
+                errAddress.Style.Add(HtmlTextWriterStyle.Display, "none");
+
+            if (dob.Value == "")
+                errDOB.Style.Add(HtmlTextWriterStyle.Display, "block");
+            else
+                errDOB.Style.Add(HtmlTextWriterStyle.Display, "none");
+
+            if (email.Value == "")
+                errEmail.Style.Add(HtmlTextWriterStyle.Display, "block");
+            else
+                errEmail.Style.Add(HtmlTextWriterStyle.Display, "none");
+
+            if (pwd.Value == "")
+                errPassword.Style.Add(HtmlTextWriterStyle.Display, "block");
+            else
+                errPassword.Style.Add(HtmlTextWriterStyle.Display, "none");
+
+            if (mobile.Value.Length > 10)
             {
                 successMsg.Style.Add(HtmlTextWriterStyle.Display, "none");
                 errMsg.Style.Add(HtmlTextWriterStyle.Display, "block");
