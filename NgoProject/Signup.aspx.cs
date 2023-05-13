@@ -24,30 +24,40 @@ namespace NgoProject
 
         protected void SignBtn_Click(object sender, EventArgs e)
         {
-            var vm = new SignupViewModel()
+            if(mobile.Value.Length > 10)
             {
-                Address = address.Value,
-                BirthDate = dob.Value,
-                Email = email.Value,
-                Gender = ddlgender.Value,
-                Mobile = mobile.Value,
-                Name = name.Value,
-                Password = pwd.Value,
-                Role = ddlrole.Value
-            };
-            if (this.IsModelValid<SignupViewModel>(vm))
+                successMsg.Style.Add(HtmlTextWriterStyle.Display, "none");
+                errMsg.Style.Add(HtmlTextWriterStyle.Display, "block");
+                errMsg.InnerText = "Enter valid mobile number";
+            }
+            else
             {
-                var r = service.Signup(vm);
 
-                if (r.Item1)
+                var vm = new SignupViewModel()
                 {
-                    successMsg.Style.Add(HtmlTextWriterStyle.Display, "none");
-                    errMsg.Style.Add(HtmlTextWriterStyle.Display, "block");
-                }
-                else
+                    Address = address.Value,
+                    BirthDate = dob.Value,
+                    Email = email.Value,
+                    Gender = ddlgender.Value,
+                    Mobile = mobile.Value,
+                    Name = name.Value,
+                    Password = pwd.Value,
+                    Role = ddlrole.Value
+                };
+                if (this.IsModelValid<SignupViewModel>(vm))
                 {
-                    errMsg.Style.Add(HtmlTextWriterStyle.Display, "none");
-                    successMsg.Style.Add(HtmlTextWriterStyle.Display, "block");
+                    var r = service.Signup(vm);
+
+                    if (r.Item1)
+                    {
+                        successMsg.Style.Add(HtmlTextWriterStyle.Display, "none");
+                        errMsg.Style.Add(HtmlTextWriterStyle.Display, "block");
+                    }
+                    else
+                    {
+                        errMsg.Style.Add(HtmlTextWriterStyle.Display, "none");
+                        successMsg.Style.Add(HtmlTextWriterStyle.Display, "block");
+                    }
                 }
             }
         }
