@@ -51,7 +51,7 @@
     <div class="login-wrapper">
         <div class="login-frm">
             <form runat="server" style="width: 100%;">
-                <h1>Donate</h1>
+                <h1>Billing information</h1>
                 <div class="c uname">
                     <Ngo:Text runat="server" ID="doName" LblText="Name" />
                     <label id="errName" runat="server" class="err" style="display: none;">Name is required</label>
