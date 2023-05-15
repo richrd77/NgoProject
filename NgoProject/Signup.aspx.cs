@@ -3,6 +3,7 @@ using Domain.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -72,6 +73,12 @@ namespace NgoProject
                 successMsg.Style.Add(HtmlTextWriterStyle.Display, "none");
                 errMsg.Style.Add(HtmlTextWriterStyle.Display, "block");
                 errMsg.InnerText = "Enter valid mobile number";
+            }
+            else if (!Regex.IsMatch(email.Value.ToString(), @"\A(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)\Z", RegexOptions.IgnoreCase))
+            {
+                successMsg.Style.Add(HtmlTextWriterStyle.Display, "none");
+                errMsg.Style.Add(HtmlTextWriterStyle.Display, "block");
+                errMsg.InnerText = "Enter valid email address";
             }
             else
             {
