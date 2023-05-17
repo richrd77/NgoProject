@@ -68,6 +68,16 @@ namespace NgoProject
             else
                 errPassword.Style.Add(HtmlTextWriterStyle.Display, "none");
 
+            DateTime zeroTime = new DateTime(1, 1, 1);
+
+            DateTime a = Convert.ToDateTime(dob.Value);
+            DateTime b = DateTime.Now; 
+
+            TimeSpan span = b - a;
+            // Because we start at year 1 for the Gregorian
+            // calendar, we must subtract a year here.
+            int years = (zeroTime + span).Year - 1;
+
             if (mobile.Value.Length > 10)
             {
                 successMsg.Style.Add(HtmlTextWriterStyle.Display, "none");
@@ -79,6 +89,12 @@ namespace NgoProject
                 successMsg.Style.Add(HtmlTextWriterStyle.Display, "none");
                 errMsg.Style.Add(HtmlTextWriterStyle.Display, "block");
                 errMsg.InnerText = "Enter valid email address";
+            }
+            else if (years < 18)
+            {
+                successMsg.Style.Add(HtmlTextWriterStyle.Display, "none");
+                errMsg.Style.Add(HtmlTextWriterStyle.Display, "block");
+                errMsg.InnerText = "User less than 18 years of age not accepted for registration";
             }
             else
             {
