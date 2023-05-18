@@ -1,5 +1,47 @@
 ﻿<%@ Page Title="About" Language="C#" MasterPageFile="~/Ngo.Master" AutoEventWireup="true" CodeBehind="About.aspx.cs" Inherits="NgoProject.About" %>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
+    
+<style>
+div.gallery {margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 300px;
+    /* height: 300px; */
+    margin-top: 50px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 200px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+</style>
+
+<div class="gallery">
+    <img src="images/image1_1.jpg" alt="Cinque Terre" width="600" height="400">
+</div>
+
+<div class="gallery">
+    <img src="images/image1_2.jpg" alt="Forest" width="600" height="400">
+</div>
+
+<div class="gallery">
+    <img src="images/image1_3.jpg" alt="Northern Lights" width="600" height="400">
+</div>
+
+<div class="gallery">
+    <img src="images/image1_4.jpg" alt="Mountains" width="600" height="400">
+</div>
+<br />
+    <br />
     <div class="row jumbotron" style="padding: 2rem 1rem;
     margin-bottom: 2rem;
     background-color: #e9ecef;

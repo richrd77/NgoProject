@@ -11,7 +11,7 @@ namespace NgoProject
 {
 
 
-    public partial class AdminHomePage
+    public partial class Contact
     {
     }
 }
