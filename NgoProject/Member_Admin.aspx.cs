@@ -66,7 +66,7 @@ namespace NgoProject
                     doj.Value = "";
                     dor.Value = "";
                     doName.Value = "";
-                    ddlTypeofuser.Value = "";
+                    ddlTypeofuser.Value = "-1";
                 }
                 else
                 {
@@ -84,7 +84,7 @@ namespace NgoProject
             doj.Value = "";
             dor.Value = "";
             doName.Value = "";
-            ddlTypeofuser.Value = "";
+            ddlTypeofuser.Value = "-1";
         }
     }
 }

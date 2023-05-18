@@ -45,7 +45,7 @@
     <div class="login-wrapper">
         <div class="login-frm">
             <form runat="server" style="width: 100%;">
-                <h1>Sign up</h1>
+                <h1>Register</h1>
 
                 <div id="errMsg" runat="server" class="c err">
                     <p>There is an error</p>
