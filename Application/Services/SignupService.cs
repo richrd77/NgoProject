@@ -27,7 +27,7 @@ namespace Application.Services
             { ((int)RoleEnum.Volunteer).ToString(), RoleEnum.Volunteer.ToString() },
             //{ ((int)RoleEnum.Administrator).ToString(), RoleEnum.Administrator.ToString() },
             { ((int)RoleEnum.FundRaiser).ToString(), RoleEnum.FundRaiser.ToString() },
-            { ((int)RoleEnum.Donar).ToString(), RoleEnum.Donar.ToString() }
+            { ((int)RoleEnum.Donor).ToString(), RoleEnum.Donor.ToString() }
         };
 
         public Dictionary<string, string> Genders => new Dictionary<string, string> { { "-1", "----Select Gender----" }, { "M", "Male" }, { "F", "Female" } };

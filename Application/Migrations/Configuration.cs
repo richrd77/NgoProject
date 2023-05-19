@@ -30,7 +30,7 @@
             context.Set<Role>().AddOrUpdate(new Role { Type = RoleEnum.Volunteer.ToString() });
             context.Set<Role>().AddOrUpdate(new Role { Type = RoleEnum.Administrator.ToString() });
             context.Set<Role>().AddOrUpdate(new Role { Type = RoleEnum.FundRaiser.ToString() });
-            context.Set<Role>().AddOrUpdate(new Role { Type = RoleEnum.Donar.ToString() });
+            context.Set<Role>().AddOrUpdate(new Role { Type = RoleEnum.Donor.ToString() });
         }
 
         private void AddTransactionsSeed(NgoDbContext context)

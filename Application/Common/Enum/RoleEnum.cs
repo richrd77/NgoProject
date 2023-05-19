@@ -7,6 +7,6 @@ namespace Application.Common.Enum
         Volunteer,
         Administrator,
         FundRaiser,
-        Donar
+        Donor
     }
 }
